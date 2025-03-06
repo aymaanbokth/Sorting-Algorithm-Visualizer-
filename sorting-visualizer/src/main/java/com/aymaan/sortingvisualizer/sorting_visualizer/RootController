@@ -1,3 +1,5 @@
+package com.aymaan.sortingvisualizer.sorting_visualizer;
+
 @CrossOrigin(origins = "*")
 @RestController
 public class RootController {
