@@ -13,7 +13,7 @@ import com.aymaan.sortingvisualizer.sorting_visualizer.service.SortingService;
 
 @CrossOrigin(origins = "*") // Allow all origins
 @RestController  // Marks this class as a REST controller
-@RequestMapping("/api")  // Base path for API endpoints
+@RequestMapping("/")  // Base path for API endpoints
 public class SortingController {
 
     private final SortingService sortingService;
