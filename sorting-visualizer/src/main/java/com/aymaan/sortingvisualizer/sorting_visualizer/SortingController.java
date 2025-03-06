@@ -18,6 +18,11 @@ public class SortingController {
 
     private final SortingService sortingService;
 
+    @GetMapping("/")
+    public String home() {
+        return "Sorting Visualizer API is running!";
+    }
+
     public SortingController(SortingService sortingService) {
         this.sortingService = sortingService;
     }
