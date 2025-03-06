@@ -1,11 +1,13 @@
 package com.aymaan.sortingvisualizer.sorting_visualizer;
 
-@CrossOrigin(origins = "*")
 @RestController
 public class RootController {
 
-    @GetMapping("/")
-    public String home() {
-        return "Sorting Visualizer API is running!";
+    @GetMapping(value = "/", produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> root() {
+        return ResponseEntity.ok("Sorting Visualizer Backend is Running!");
     }
 }
+
+
+

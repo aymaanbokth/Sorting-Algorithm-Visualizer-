@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"; // <-- Add useEffect here
 import axios from "axios";
 
 
-const API_BASE_URL = "http://sorting-visualizer-api-env.eba-qx4pdxgg.us-east-1.elasticbeanstalk.com/"; // Spring Boot API URL
+const API_BASE_URL = "http://localhost:8080/"; // Spring Boot API URL
 
 const algorithms = [
   "bubble-sort",
