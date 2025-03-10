@@ -1,6 +1,5 @@
 # ---- Build Stage ----
-# Use Debian-based image instead of Alpine
-FROM openjdk:17-jdk-slim AS build  # Use Debian-based image instead of Alpine
+FROM openjdk:17-jdk-slim AS build
 
 # Set working directory inside the container
 WORKDIR /app
@@ -24,7 +23,7 @@ COPY src src
 RUN ./gradlew clean build --no-daemon
 
 # ---- Production Stage ----
-FROM openjdk:17-jdk-slim  # Use the same Debian-based image for consistency
+FROM openjdk:17-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app
