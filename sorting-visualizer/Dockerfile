@@ -4,9 +4,6 @@ FROM openjdk:17-jdk-slim AS build
 # Set working directory inside the container
 WORKDIR /app
 
-# Install dependencies (Fix xargs issue)
-RUN apt-get update && apt-get install -y xargs
-
 # Copy Gradle wrapper and configuration first
 COPY gradle gradle
 COPY gradlew .
