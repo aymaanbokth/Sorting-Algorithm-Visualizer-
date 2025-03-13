@@ -14,7 +14,7 @@ Welcome to Sorting Algorithm Visualizer – because watching numbers shuffle aro
 - Containerization: Docker
 
 
-#⚡ Live Demo
+# ⚡ Live Demo
 
 👉 Frontend: https://sorting-visualizer.yourdomain.com
 👉 Backend API: https://sorting-algorithm-visualizer-xhpi.onrender.com
